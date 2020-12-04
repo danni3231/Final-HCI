@@ -42,6 +42,7 @@ map.on("click", function (e) {
             window.location.href = `country.html?${countryIndex}-${code}`;
         } else {
             alert("Pais no disponible");
+            console.log(code);
         }
     });
 });

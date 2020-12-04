@@ -1,0 +1,33 @@
+.levelThree {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__card{
+        width: 235px;
+        height: 170px;
+        background: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-sizing: border-box;
+        padding: 10px;
+
+        margin-bottom: 20px;
+
+        p{
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+
+    .btn{
+        position: absolute;
+        top: 750px;
+    }
+}

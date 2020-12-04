@@ -1,35 +1,61 @@
 //typography
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
 
-$Poppins: 'Poppins', sans-serif;
+$Poppins: "Poppins", sans-serif;
 
 //general
-body,html{
+body,html {
     margin: 0px;
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     display: flex;
-    background-color: #9CE2E0;
+    background-color: #9ce2e0;
     justify-content: space-between;
 }
 
-#map{
+#map {
     width: 50%;
-    height: 100%
+    height: 100%;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.clickable{
+.clickable {
     cursor: pointer;
 }
 
-h2{
+.landing {
+    background-image: url("../data/images/landing.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    padding: 100px 100px;
+
+    h1{
+        margin-top: 0%;
+    }
+}
+
+h1 {
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 144px;
+
+    color: #ffffff;
+}
+
+h2 {
     font-family: $Poppins;
     font-style: normal;
     font-weight: bold;
@@ -48,8 +74,7 @@ h3 {
     margin: 10px 0px;
 }
 
-
-p, ul{
+p,ul {
     font-family: $Poppins;
     font-style: normal;
     font-size: 18px;
@@ -57,5 +82,8 @@ p, ul{
     margin: 0px;
 }
 
-@import'_home.scss';
-@import'_country.scss'
+@import "button";
+@import "nav";
+@import "home";
+@import "country";
+@import "levelThree";

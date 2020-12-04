@@ -1,0 +1,23 @@
+button {
+    width: 388px;
+    height: 90px;
+    border: none;
+    background-color: #079dab;
+    border-radius: 20px;
+
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #ffffff;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:hover{
+        background-color: #057a85;
+    }
+}

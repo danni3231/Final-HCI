@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+        />
+        <link rel="stylesheet" href="./style/main.css" />
+        <title>Geoaprende</title>
+    </head>
+    <body>
+        <style>
+            .distance-container {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 1;
+            }
+
+            .distance-container > * {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                font-size: 11px;
+                line-height: 18px;
+                display: block;
+                margin: 0;
+                padding: 5px 10px;
+                border-radius: 3px;
+            }
+        </style>
+
+        <nav class="nav">
+            <img class="clickable" src="./data/images/icons/arrow.png" alt="" />
+            <h2>Nivel3</h2>
+        </nav>
+
+        <div id="map"></div>
+        <section class="levelThree">
+            <div class="levelThree__card clickable">
+                <img src="" alt="" />
+                <p>name</p>
+            </div>
+
+            <h3 class="levelThree__dist">Distancia:</h3>
+
+            <button class="btn btn-primary hidden">continuar</button>
+        </section>
+        <div id="distance" class="distance-container"></div>
+    </body>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <script src="https://npmcdn.com/@turf/turf@5.1.6/turf.min.js"></script>
+    <script src="./scripts/lib/codegrid.js"></script>
+    <script src="./scripts/model/info--level--three.js"></script>
+    <script src="./scripts/level--three.js"></script>
+</html>

@@ -3,55 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./style/main.css">
     <title>Geoaprende</title>
-
 </head>
-<body>
-    <div class="home__brujula">
-        <img src="./data/images/brujula.png" alt="">
-    </div>
-    <div id='map'></div>
-    <aside class="home__aside">
-        <section class="user">
-            <img src="./data/images/icons/trophy.png" alt="">
-            <img src="./data/images/icons/user.png" alt="">
-        </section>
-        <section class="levels">
-            <h3>Progreso por nivel</h3>
-            <div class="level level--one">
-                <img class="clickable" src="./data/images/level1.png" alt="">
-                <div class="points">
-                    <div>
-                        <p>0/100</p>
-                    </div>
-                </div>
-            </div>
-            <div class="level level--two">
-                <img class="clickable" src="./data/images/level2.png" alt="">
-                <div class="points">
-                    <div>
-                        <p>0/100</p>
-                    </div>
-                </div>
-            </div>
-            <div class="level level--three">
-                <img class="clickable" src="./data/images/level3.png" alt="">
-                <div class="points">
-                    <div>
-                        <p>0/100</p>
-                    </div>
-                </div>
-            </div>
-            <h3 class="total">Total de puntos:</h3>
-
-
-        </section>
-    </aside>
+<body class="landing">
+    <h1>Geoaprende</h1>
+    <button>Empezar</button>
 </body>
-<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-<script src="./scripts/lib/codegrid.js"></script>
-<script src="./scripts/model/countrys.js"></script>
-<script src="./scripts/home.js"></script>
+
+<script>
+    document.querySelector('button').addEventListener('click', () => {
+        window.location.href = "home.html";
+    });
+</script>
 </html>

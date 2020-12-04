@@ -9,7 +9,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #9CE2E0;
+  background-color: #9ce2e0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -26,6 +26,38 @@ body {
 
 .clickable {
   cursor: pointer;
+}
+
+.landing {
+  background-image: url("../data/images/landing.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 100px 100px;
+}
+
+.landing h1 {
+  margin-top: 0%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 144px;
+  color: #ffffff;
 }
 
 h2 {
@@ -53,6 +85,49 @@ p, ul {
   font-size: 18px;
   color: #263238;
   margin: 0px;
+}
+
+button {
+  width: 388px;
+  height: 90px;
+  border: none;
+  background-color: #079dab;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #057a85;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+.nav h2 {
+  color: #fff;
+}
+
+.nav img {
+  margin-right: 20px;
 }
 
 .home__brujula {
@@ -183,6 +258,40 @@ p, ul {
   position: relative;
 }
 
+.map .pin {
+  position: absolute;
+}
+
+.map .pin__card {
+  position: absolute;
+  width: 235px;
+  height: 170px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+
+.map .pin__card p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.map .pin__container {
+  position: relative;
+}
+
 .map__info {
   width: 50%;
   display: -webkit-box;
@@ -245,7 +354,8 @@ p, ul {
   border-bottom-right-radius: 10px;
 }
 
-.map__info .card__info p, .map__info .card__info ul {
+.map__info .card__info p,
+.map__info .card__info ul {
   margin-bottom: 30px;
 }
 
@@ -295,6 +405,10 @@ p, ul {
   background-color: #ffe3b0;
 }
 
+.map__info .card .tourism--select {
+  font-weight: bold;
+}
+
 .map__info .card .flag {
   background-color: #ffda96;
 }
@@ -342,5 +456,54 @@ p, ul {
   width: 165px;
   height: 165px;
   border-radius: 7px;
+}
+
+.levelThree {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.levelThree__card {
+  width: 235px;
+  height: 170px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.levelThree__card p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.levelThree .btn {
+  position: absolute;
+  top: 750px;
 }
 /*# sourceMappingURL=main.css.map */
