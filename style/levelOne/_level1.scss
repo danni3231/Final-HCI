@@ -1,0 +1,91 @@
+.siluetas {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+   
+  }
+
+  
+
+  .contentLevel1{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .banderas{
+  
+      display: flex;
+      margin: auto;
+      width: 30%;
+    
+      
+  }
+
+  .draggable {
+    width: 100%;
+    
+  }
+
+
+
+  .imagesSiluetas {
+    width: 140px;
+    height: 130px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .imagesFlags {
+    width: 50%;
+    display: flex-end;
+  }
+
+  .horizontal {
+    display: block;
+    width: 100px;
+  }
+
+  .vertical {
+    display: block;
+    width: 100px;
+  }
+
+  .countryName {
+    position: absolute;
+    display: inline-block;
+    left: 120px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+ 
+  }
+
+
+  @media (max-width: 600px){
+    .imagesSiluetas {
+        width: 100px;
+        height: 90px;
+      }
+
+      .banderas{
+  
+        display: flex;
+        margin: auto;
+        width: 40%;
+      
+        
+    }
+  }

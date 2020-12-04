@@ -213,3 +213,9 @@ btn.addEventListener("click", () => {
 
     btn.classList.add('hidden');
 });
+
+//
+
+document.querySelector('nav').querySelector('img').addEventListener('click', function(){
+    window.location.href = 'home.html'
+})

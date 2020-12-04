@@ -1,0 +1,71 @@
+.flag{
+    &__name{
+        text-align:center;
+        
+        color: $border-color;
+    }
+
+}
+
+
+
+.buttons{
+    text-align: center;
+    align-items: center;
+    margin: auto;  
+    
+}
+
+.options{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.example-parent {
+    border: 2px solid $border-color;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 30%;
+  }
+  
+  .example-origin {
+    flex-basis: 100%;
+    flex-grow: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    &__name{
+        color: $border-color;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+  }
+  
+  .draggable {
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding: 0px;
+    width: 100px;
+  }
+  
+  .dropzone {
+    background-color: lightgray;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: auto;
+
+  }
+
+  
+  .comprobation{
+      font-weight: bolder;
+      
+  }
+  

@@ -1,0 +1,16 @@
+.back{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    &__img{
+        margin-top: 35px;
+    }
+
+    &__level{
+        width: 60%;
+        
+     
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/levelTwo/levelTwo.css">
+    <title>nivel 2</title>
+</head>
+
+
+<body>
+  <nav class="nav">
+    <img class="clickable" src="./data/images/icons/arrow.png" alt="" />
+    <h2>Nivel3</h2>
+  </nav>
+
+  <div class="game2">
+    <div class="flag">
+      <h1 id="countrySelected"></h1>
+      <div class="flag__content">
+        <div id="canvass"></div>
+      </div>
+    </div>
+  
+    <div class="buttons">
+      <button class="aumFranjas btn--secondary">Aumentar franjas</button>
+      <button class="disFranjas btn--secondary">Disminuir franjas</button>
+      <button class="comprobation btn">!Listo¡</button>
+    </div>
+  
+  
+  <div class="options">
+      <div class="example-parent">
+          <div class="example-origin">
+            <h3 class="example-origin__name">Orientación</h3>
+            <button class="horizontal">Horizontal</button>
+            <button class="vertical">Vertical</button>
+          </div>
+        </div>
+  
+        <div class="example-parent">
+          <div class="example-origin">
+            <h3 class="example-origin__name">Colores</h3>
+            <div id="draggable-1" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+  
+            </div>
+            <div id="draggable-2" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+  
+            </div>
+            <div id="draggable-3" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+  
+            </div>
+            <div id="draggable-4" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+  
+            </div>
+            <div id="draggable-5" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+  
+            </div>
+            <div id="draggable-6" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+  
+            </div>
+          </div>
+        </div>
+  
+        <div class="example-parent">
+          <div class="example-origin">
+            <h3 class="example-origin__name">Simbolos</h3>
+            <div id="simboloss">
+  
+            </div>
+            
+          </div>
+        </div>
+  
+      </div>
+  
+
+  </div>
+
+
+
+
+</body>
+<script src="./scripts/model/paises.js"></script>
+<script src="./scripts/level--two.js"></script>
+</html>

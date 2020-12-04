@@ -1,0 +1,127 @@
+.flag{
+    &__name{
+        text-align:center;
+        
+        color: $border-color;
+    }
+
+}
+
+#canvass {
+  width: 350px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: lightgray;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.buttons{
+    text-align: center;
+    align-items: center;
+    margin: auto;  
+    
+}
+
+.options{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.example-parent {
+    border: 2px solid $border-color;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 30%;
+  }
+  
+  .example-origin {
+    flex-basis: 100%;
+    flex-grow: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    &__name{
+        color: $border-color;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+  }
+  
+  .draggable {
+    background-color: red;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .dropzone {
+    background-color: lightgray;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: auto;
+
+  }
+  
+  #draggable-1 {
+    background-color:#123487;
+  }
+  
+  #draggable-2 {
+    background-color: #69A0D6;
+  }
+  
+  #draggable-3 {
+    background-color: #F4E200;
+  }
+
+  #draggable-4 {
+    background-color: #02722D;
+  }
+  
+  #draggable-5 {
+    background-color: #FBFBFB;
+  }
+  
+  #draggable-6 {
+    background-color: #D61C12;
+  }
+
+  .horizontal {
+    display: block;
+    width: 100px;
+  }
+
+  .vertical {
+    display: block;
+    width: 100px;
+  }
+
+  .comprobation{
+      font-weight: bolder; 
+  }
+
+  #simboloBanderaImg {
+    position: relative;
+    width: 100px;
+    height: 80px;
+    top: -140px;
+    left: 125px;
+  }
+
+  .simboloImage {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  
