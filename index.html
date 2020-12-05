@@ -6,14 +6,33 @@
     <link rel="stylesheet" href="./style/main.css">
     <title>Geoaprende</title>
 </head>
-<body class="landing">
-    <h1>Geoaprende</h1>
-    <button>Empezar</button>
-</body>
+<body>
+    <div class="landing">
+        <h1>Geoaprende</h1>
+        <button>Jugar</button>
+    </div>
 
-<script>
-    document.querySelector('button').addEventListener('click', () => {
-        window.location.href = "home.html";
-    });
-</script>
+    <div class="context" style="display: none;">
+        <div class="globo globo--big">
+            <h3>¡Hola!</h3>
+            <p>Mi nombre es Jose, acompañame a explorar America</p>
+            <img src="./data/images/globo--big.png" alt="">
+        </div>
+        <button class="btn">Siguiente</button>
+    </div>
+
+    <div class="context user" style="display: none;">
+        <div class="globo globo--big">
+            <h3>¿Cúal es tu nombre?</h3>
+            <input type="text">
+            <img src="./data/images/globo--big.png" alt="">
+        </div>
+        <button class="btn">Siguiente</button>
+    </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+<script src="./scripts/firebase.js"></script>
+<script src="./scripts/landing.js"></script>
 </html>

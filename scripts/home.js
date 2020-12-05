@@ -60,3 +60,7 @@ for (const level of levels) {
 
     });
 };
+
+//get user information
+
+console.log(localStorage.getItem('userID'));

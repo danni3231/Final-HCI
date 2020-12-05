@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <form class="form form--register">
+            <h3>¿Cúal es tu nombre?</h3>
+            <input type="text">
+            <h3>Correo eletronico</h3>
+            <input type="text">
+            <h3>Contraseña</h3>
+            <input type="text">
+            <button class="btn">Empezar</button>
+
+            <p>ya tienes una cuenta? inicia sesion</p>
+
+        </form>
+
+        <form class="form form--login" style="display: none;">
+            <h3>Correo eletronico</h3>
+            <input type="text">
+            <h3>Contraseña</h3>
+            <input type="text">
+            <button class="btn">Empezar</button>
+
+            <p>no tienes una cuenta? registrate</p>
+
+        </form>
+    </div>
+    
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+</html>
