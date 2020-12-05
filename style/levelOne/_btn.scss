@@ -16,6 +16,10 @@
     border-radius: 5px;
     border: 0;
     @include btnModifier($primary-color);
+
+    &:focus{
+      outline: none;
+    }
   
     &--secondary {
       @include btnModifier($secundary-color);

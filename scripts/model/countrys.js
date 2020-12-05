@@ -225,7 +225,7 @@ var countrys = [
                 y: 278,
             },
         ],
-        money: " Reales brasileños (R$)",
+        money: " Reales brasileños (BRL)",
         language: "Portugués",
         demonym: "brasileño (a)",
         tourism: [
@@ -258,6 +258,71 @@ var countrys = [
             "./data/images/countrys/Brasil.png",
             "./data/images/countrys/brasil--bandera.png",
             "./data/images/countrys/brasil--escudo.png",
+        ],
+    },
+    {
+        name: "Chile",
+        code: "cl",
+        surface: [
+            `Ubicado en el extremo sudoeste de América del Sur, dentro de la región llamada Cono Sur, Chile continental presenta un alto desarrollo longitudinal y escaso desarrollo latitudinal, extendiéndose por 39 grados de latitud.`,
+            "756.950 km²",
+        ],
+        population: `Chile, con una población de 18.729.160 personas, se encuentra en la posición 62 de la tabla de población, compuesta por 196 países y presenta una moderada densidad de población, 25 habitantes por Km2.`,
+        cities: [
+            {
+                name: "Concepción",
+                x: 0,
+                y: 308,
+            },
+            {
+                name: "Valparaíso",
+                x: 13,
+                y: 248,
+            },
+            {
+                name: "La Serena",
+                x: 12,
+                y: 162,
+            },
+            {
+                name: "Santiago",
+                x: 29,
+                y: 269,
+            },
+        ],
+        money: " Pesos chilenos (PCL)",
+        language: "Portugués",
+        demonym: "Chileno (a)",
+        tourism: [
+            {
+                name: "Parque Bicentenario.",
+                description:
+                    "Parque urbano con cursos de agility para perros, zonas de juego y deportivas, senderos y merenderos.",
+                x: 28,
+                y: 293,
+                img: "./data/images/countrys/parque--bicentenario.png",
+            },
+            {
+                name: "Valle de la Luna",
+                description:
+                    "Valle desértico de paisaje lunar, con montañas de vetas rosas, puestas de sol y formaciones rocosas únicas.",
+                x: 13,
+                y: 128,
+                img: "./data/images/countrys/valle--luna.png",
+            },
+            {
+                name: "Lagunas de Cotacotani",
+                description:
+                    "Las lagunas de Cotacotani se encuentra separadas por rocas volcánicas ubicadas en el Chungará, es abastecido principalmente por el río Desaguadero.",
+                x: 17,
+                y: 2,
+                img: "./data/images/countrys/lagunas--de--cota.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/chile.png",
+            "./data/images/countrys/chile--bandera.png",
+            "./data/images/countrys/chile--escudo.png",
         ],
     },
 ];

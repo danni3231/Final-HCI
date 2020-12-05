@@ -12,11 +12,18 @@
     <body>
         <nav class="nav">
             <img class="clickable" src="./data/images/icons/arrow.png" alt="" />
-            <h2>Nivel3</h2>
+            <h2>Nivel 3</h2>
         </nav>
 
-        <div id="map"></div>
-        <section class="levelThree">
+        <div class="instrucciones">
+            <img src="./data/images/gifNivel3.gif" alt="instrucciones del lvl 1">
+            <button class="btn btn--secondary">Empezar</button>
+        </div>
+
+        <div id="map""></div>
+
+        
+        <section class="levelThree" style="display: none;">
             <div class="levelThree__card clickable">
                 <img src="" alt="" />
                 <p>name</p>
@@ -26,7 +33,21 @@
 
             <button class="btn btn-primary hidden">continuar</button>
         </section>
-        <div id="distance" class="distance-container"></div>
+
+        <section class="levelThree--complete" style="display: none;">
+            <div class="globo globo--big">
+                <h3>¡Felicitaciones!</h3>
+                <p>Completaste el tercer nivel, lo hiciste muy bien.</p>
+                <img src="./data/images/globo--big.png" alt="">
+            </div>
+            <div class="globo globo--small">
+                <h3>Obtuviste</h3>
+                <p>x puntos</p>
+                <img src="./data/images/globo--small.png" alt="">
+            </div>
+            <button class="btn">Continuar</button>
+
+        </section>
     </body>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
     <script src="https://npmcdn.com/@turf/turf@5.1.6/turf.min.js"></script>

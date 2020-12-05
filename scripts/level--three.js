@@ -5,11 +5,11 @@ var firstClick = true;
 var index = 0;
 
 const card = document.querySelector(".levelThree__card");
-const btn = document.querySelector(".levelThree").querySelector('.btn');
+const btn = document.querySelector(".levelThree").querySelector(".btn");
 
 function updateCard(site) {
-    card.querySelector('img').src = site.img;
-    card.querySelector('p').innerText = site.name;
+    card.querySelector("img").src = site.img;
+    card.querySelector("p").innerText = site.name;
 }
 
 updateCard(sites[index]);
@@ -32,7 +32,7 @@ map.touchZoomRotate.disableRotation();
 map.scrollZoom.disable();
 map.dragPan.disable();
 
-var distanceContainer = document.querySelector('.levelThree__dist')
+var distanceContainer = document.querySelector(".levelThree__dist");
 
 // GeoJSON object to hold our measurement features
 var geojson = {
@@ -98,20 +98,19 @@ map.on("load", function () {
     geojson.features.push(point);
 
     map.on("click", function (e) {
-        if(firstClick){
-
+        if (firstClick) {
             grid.getCode(e.lngLat.lat, e.lngLat.lng, function (error, code) {
-                currentCode=code;
+                currentCode = code;
             });
 
             var features = map.queryRenderedFeatures(e.point, {
                 layers: ["measure-points"],
             });
-    
+
             // Remove the linestring from the group
             // So we can redraw it based on the points collection
             if (geojson.features.length > 1) geojson.features.pop();
-    
+
             // If a feature was clicked, remove it from the map
             if (features.length) {
                 var id = features[0].properties.id;
@@ -129,67 +128,66 @@ map.on("load", function () {
                         id: String(new Date().getTime()),
                     },
                 };
-    
+
                 geojson.features.push(point);
             }
-    
+
             if (geojson.features.length > 1) {
-                linestring.geometry.coordinates = geojson.features.map(function (
-                    point
-                ) {
-                    return point.geometry.coordinates;
-                });
-    
+                linestring.geometry.coordinates = geojson.features.map(
+                    function (point) {
+                        return point.geometry.coordinates;
+                    }
+                );
+
                 geojson.features.push(linestring);
-    
-          
+
                 distanceContainer.innerHTML =
                     "Distancia: " +
                     turf.length(linestring).toLocaleString() +
                     "km";
                 dist = turf.length(linestring);
             }
-    
-            map.getSource("geojson").setData(geojson);
-            firstClick=false;
-            btn.classList.remove('hidden');
-        }
 
+            map.getSource("geojson").setData(geojson);
+            firstClick = false;
+            btn.classList.remove("hidden");
+        }
     });
 });
 
 //score
 
-function calculateScore(dist,code) {
-    console.log(code, currentCode);
-    if(code==sites[index].code){
-        score+=5;
+function calculateScore(dist, code) {
+    console.log(code, sites[index-1].code);
+    if (code == sites[index-1].code) {
+        score += 5;
     }
 
-    if(dist<=500){
-        score+=15;
-        console.log('suma 15');
-    }else if(dist>500 && dist<=1500){
-        score+=10;
-    }else if(dist>1500 && dist<=2500){
-        score+=5;
-    }else if(dist>2500){
-        score+=0;
+    if (dist <= 500) {
+        score += 15;
+        console.log("suma 15");
+    } else if (dist > 500 && dist <= 1500) {
+        score += 10;
+    } else if (dist > 1500 && dist <= 2500) {
+        score += 5;
+    } else if (dist > 2500) {
+        score += 0;
     }
 }
 //continue
 btn.addEventListener("click", () => {
     index++;
-
-    if(index<sites.length){
+    calculateScore(dist, currentCode);
+    
+    if (index < sites.length) {
         distanceContainer.innerHTML = "Distancia:";
-        calculateScore(dist,currentCode);
+ 
 
-        firstClick=true;
-        
+        firstClick = true;
+
         updateCard(sites[index]);
         geojson.features = [];
-    
+
         var point = {
             type: "Feature",
             geometry: {
@@ -200,22 +198,49 @@ btn.addEventListener("click", () => {
                 id: String(new Date().getTime()),
             },
         };
-    
+
         geojson.features.pop();
 
         map.getSource("geojson").setData(geojson);
-    
+
         geojson.features.push(point);
-        
-    }else{
+    } else {
         //inserte codigo de continuar xd
+        document.querySelector(".levelThree").style.display = "none";
+        document.querySelector("#map").style.display = "none";
+        document.querySelector(".levelThree--complete").style.display = "flex";
+
+        const scoreP = document
+            .querySelector(".globo--small")
+            .querySelector("p");
+        scoreP.innerText = `${score} puntos`;
     }
 
-    btn.classList.add('hidden');
+    btn.classList.add("hidden");
+    console.log(score);
 });
 
-//
+//actions
 
-document.querySelector('nav').querySelector('img').addEventListener('click', function(){
-    window.location.href = 'home.html'
-})
+document
+    .querySelector("nav")
+    .querySelector("img")
+    .addEventListener("click", function () {
+        window.location.href = "home.html";
+    });
+
+document
+    .querySelector(".instrucciones")
+    .querySelector(".btn")
+    .addEventListener("click", () => {
+        document.querySelector(".instrucciones").style.display = "none";
+        //document.querySelector(".map").style.display = "inline";
+        document.querySelector(".levelThree").style.display = "flex";
+    });
+
+document
+    .querySelector(".levelThree--complete")
+    .querySelector(".btn")
+    .addEventListener('click', () =>{
+        window.location.href = "home.html";
+    });

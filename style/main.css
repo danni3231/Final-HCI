@@ -51,6 +51,36 @@ body {
   margin-top: 0%;
 }
 
+.instrucciones {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #9ce2e0;
+}
+
+.instrucciones img {
+  height: 95vh;
+}
+
+.instrucciones button {
+  position: absolute;
+  right: 15%;
+  top: 85%;
+  width: 388px;
+  height: 90px;
+  border-radius: 20px;
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -505,5 +535,45 @@ button:hover {
 .levelThree .btn {
   position: absolute;
   top: 750px;
+}
+
+.levelThree--complete {
+  width: 100%;
+  height: 100%;
+  background-image: url("../data/images/complete.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.levelThree--complete .globo {
+  position: absolute;
+}
+
+.levelThree--complete .globo h3 {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.levelThree--complete .globo p {
+  position: absolute;
+  top: 80px;
+  left: 25px;
+}
+
+.levelThree--complete .globo--big {
+  top: 141px;
+  left: 828px;
+}
+
+.levelThree--complete .globo--small {
+  top: 377px;
+  left: 986px;
+}
+
+.levelThree--complete .btn {
+  position: absolute;
+  top: 850px;
+  right: 300px;
 }
 /*# sourceMappingURL=main.css.map */

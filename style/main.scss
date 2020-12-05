@@ -51,6 +51,34 @@ body {
     }
 }
 
+
+.instrucciones {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #9ce2e0;
+    img {
+        height: 95vh;
+    }
+
+    button {
+        position: absolute;
+        right: 15%;
+        top: 85%;
+
+        width: 388px;
+        height: 90px;
+
+        border-radius: 20px;
+        font-size: 36px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
 h1 {
     font-family: $Poppins;
     font-style: normal;

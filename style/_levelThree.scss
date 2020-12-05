@@ -30,4 +30,44 @@
         position: absolute;
         top: 750px;
     }
+
+    &--complete{
+        width: 100%;height: 100%;
+        background-image: url('../data/images/complete.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .globo{
+            position: absolute;
+
+            h3{
+                position: absolute;
+                top: 25px;
+                left: 25px;
+            }
+
+            p{
+                position: absolute;
+                top: 80px;
+                left: 25px;
+            }
+
+            &--big{
+                top: 141px;
+                left: 828px;
+
+            }
+
+            &--small{
+                top: 377px;
+                left: 986px;
+            }
+        }
+
+        .btn{
+            position: absolute;
+            top: 850px;
+            right: 300px; 
+        }
+    }
 }

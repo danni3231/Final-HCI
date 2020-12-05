@@ -16,6 +16,8 @@ surface.querySelector('h2').innerText = country.surface[1];
 
 const population = infos[1];
 population.querySelector('p').innerText = country.population;
+population.querySelector('p').style.position="absolute";
+population.querySelector('p').style.zIndex ="3";
 
 const cities = infos[2];
 const citiesList = cities.querySelectorAll('li');

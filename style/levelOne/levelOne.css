@@ -1,11 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  background-color: #9CE2E0;
+  background-color: #9ce2e0;
   font-family: "Poppins", sans-serif;
 }
 
 .clickable {
   cursor: pointer;
+}
+
+.instrucciones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.instrucciones img {
+  height: 95vh;
+}
+
+.instrucciones button {
+  position: absolute;
+  right: 15%;
+  top: 85%;
+  width: 388px;
+  height: 90px;
+  border-radius: 20px;
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
 }
 
 .nav {
@@ -36,7 +63,7 @@ body {
   padding: 5px 5px;
   border-radius: 5px;
   border: 0;
-  background-color: #FB990F;
+  background-color: #fb990f;
   color: #ffffff;
 }
 
@@ -44,8 +71,12 @@ body {
   background-color: #a15f03;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn--secondary {
-  background-color: #079DAB;
+  background-color: #079dab;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -79,7 +110,7 @@ body {
 
 .flag__name {
   text-align: center;
-  color: #4C9392;
+  color: #4c9392;
 }
 
 .buttons {
@@ -104,7 +135,7 @@ body {
 }
 
 .example-parent {
-  border: 2px solid #4C9392;
+  border: 2px solid #4c9392;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +164,7 @@ body {
 }
 
 .example-origin__name {
-  color: #4C9392;
+  color: #4c9392;
   width: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
