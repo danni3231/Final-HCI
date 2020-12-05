@@ -63,4 +63,30 @@ for (const level of levels) {
 
 //get user information
 
-console.log(localStorage.getItem('userID'));
+
+const points = document.querySelectorAll('.points');
+
+console.log();
+usersRef
+.doc(localStorage.getItem('userID'))
+.get()
+.then((snapshot)=>{
+    const user = snapshot.data();
+    points[0].querySelector('p').innerText = `${user.level1}/100`;
+    if(user.level1 != 0){
+        points[0].querySelector('div').style.width = `${user.level1}%`;
+        points[0].querySelector('div').style.backgroundColor = '#F88000';
+    }
+
+    points[1].querySelector('p').innerText = `${user.level2}/100`;
+    if(user.level2 != 0){
+        points[1].querySelector('div').style.width = `${user.level2}%`;
+        points[1].querySelector('div').style.backgroundColor = '#079DAB';
+    }
+
+    points[2].querySelector('p').innerText = `${user.level3}/100`;
+    if(user.level3 != 0){
+        points[2].querySelector('div').style.width = `${user.level3}%`;
+        points[2].querySelector('div').style.backgroundColor = '#FECF5D';
+    }
+})
