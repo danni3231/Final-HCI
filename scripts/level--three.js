@@ -242,5 +242,17 @@ document
     .querySelector(".levelThree--complete")
     .querySelector(".btn")
     .addEventListener('click', () =>{
-        window.location.href = "home.html";
+        usersRef
+        .doc(localStorage.getItem('userID'))
+        .update({
+            level3: score,
+        })
+        .then(()=>{
+            window.location.href = "home.html";
+        })
+        .catch((error)=>{
+            // The document probably doesn't exist.
+            console.error("Error updating document: ", error);
+        });
+
     });

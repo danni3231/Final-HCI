@@ -254,5 +254,16 @@ document
     .querySelector(".finalizarNivel")
     .querySelector(".btnFinal")
     .addEventListener("click", () => {
-        window.location.href = "home.html";
+        usersRef
+        .doc(localStorage.getItem('userID'))
+        .update({
+            level1: puntaje,
+        })
+        .then(()=>{
+            window.location.href = "home.html";
+        })
+        .catch((error)=>{
+            // The document probably doesn't exist.
+            console.error("Error updating document: ", error);
+        });
     });
