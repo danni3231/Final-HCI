@@ -291,7 +291,7 @@ var countrys = [
             },
         ],
         money: " Pesos chilenos (PCL)",
-        language: "Portugués",
+        language: "Español",
         demonym: "Chileno (a)",
         tourism: [
             {
@@ -323,6 +323,526 @@ var countrys = [
             "./data/images/countrys/chile.png",
             "./data/images/countrys/chile--bandera.png",
             "./data/images/countrys/chile--escudo.png",
+        ],
+    },
+    {
+        name: "México",
+        code: "mx",
+        surface: [
+            `Méxiconota, oficialmente los Estados Unidos Mexicanos, es un país soberano ubicado en la parte meridional de América del Norte.`,
+            "1,973.000 km²",
+        ],
+        population: `México, con una población de 124.738.000 personas, es un país muy poblado y presenta una moderada densidad de población, 64 habitantes por Km2.`,
+        cities: [
+            {
+                name: "Ecateoex de Morelos",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Tijuana",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Guadalajara",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Ciudad de México",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: " Pesos mexicanos (MXN)",
+        language: "Español",
+        demonym: "Mexicano (a)",
+        tourism: [
+            {
+                name: "Zona Arqueológica de Tulum.",
+                description:
+                    "Ruinas de una antigua ciudad maya amurallada que se encuentra en un acantilado con vistas al mar Caribe.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/tulum.png",
+            },
+            {
+                name: "Xcaret.",
+                description:
+                    "Parque ecoarqueológico situado frente al mar con atracciones como el esnórquel y la exploración de cuevas.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/Xcaret.png",
+            },
+            {
+                name: "Parque Xel-Há.",
+                description:
+                    "Gran acuario natural con actividades tales como el esnórquel y nadar con delfines.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/Xel-Há..png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/mexico.png",
+            "./data/images/countrys/mexico--bandera.png",
+            "./data/images/countrys/mexico--escudo.png",
+        ],
+    },
+    {
+        name: "Perú",
+        code: "pe",
+        surface: [
+            `El Perú se encuentra situado en la parte central y occidental de América del Sur,. Está conformado por un territorio de una superficie continental de 1.285.216,60 km², lo que representa el 0.87% del planeta.`,
+            "1,285.000 km²",
+        ],
+        population: `Perú, con una población de 32.162.184 personas, se encuentra en la posición 44 de la tabla de población, compuesta por 196 países y presenta una moderada densidad de población, 25 habitantes por Km2.`,
+        cities: [
+            {
+                name: "Arequipa",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Callao",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Trujillo",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Lima",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: " Soles (PEN)",
+        language: "Español",
+        demonym: "Peruano (a)",
+        tourism: [
+            {
+                name: "Plaza de Armas de Lima.",
+                description:
+                    "Plaza famosa por ser el lugar de fundación de Lima que tiene una fuente y está rodeada de imponentes palacios.cen",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/plaza--armas.png",
+            },
+            {
+                name: "Centro histórico de Cuzco.",
+                description:
+                    "denominado también como Zona Monumental del Cusco es el casco histórico de la ciudad del Cusco, Perú.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/peru--centro.png",
+            },
+            {
+                name: "Valle Sagrado de los Incas.",
+                description:
+                    "Valle rodeado de montañas y situado junto al río, con las ruinas de templos y otras estructuras de los incas.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/valle--inca.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/Peru.png",
+            "./data/images/countrys/Peru--bandera.png",
+            "./data/images/countrys/Peru--escudo.png",
+        ],
+    },
+    {
+        name: "Bolivia",
+        code: "bo",
+        surface: [
+            `Bolivia, oficialmente Estado Plurinacional de Bolivia,12​13​ es un país soberano situado en la región centro-occidental de América del Sur, políticamente se constituye como un estado plurinacional, descentralizado con autonomías.`,
+            "1,099.000 km²",
+        ],
+        population: `Bolivia, con una población de 11.353.142 personas, se encuentra en la posición 80 de la tabla de población, compuesta por 196 países y mantiene una muy baja densidad de población, 10 habitantes por Km2.`,
+        cities: [
+            {
+                name: "El Alto",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Sucre",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Cochamba",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "La Paz",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: " Soles Bolivianos (BOB)",
+        language: "Español",
+        demonym: "Boliviano (a)",
+        tourism: [
+            {
+                name: "Salar de Uyuni.",
+                description:
+                    "Salar más grande del mundo y entorno pintoresco al que acuden los flamencos en época de cría.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/salar--uyuni.png",
+            },
+            {
+                name: "Isla Incahuasi.",
+                description:
+                    "Llamativa isla escarpada en medio de un salar, con cactus gigantes y centro de información turística.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/isla--incahuasi.png",
+            },
+            {
+                name: "Reserva Nacional de Fauna Andina Eduardo Avaroa.",
+                description:
+                    "Reserva nacional a gran altitud que abarca gran parte de la distintiva ecorregión de puna seca.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/reserva--avaroa.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/bolivia.png",
+            "./data/images/countrys/bolivia--bandera.png",
+            "./data/images/countrys/bolivia--escudo.png",
+        ],
+    },
+    {
+        name: "Paraguay",
+        code: "py",
+        surface: [
+            `Paraguay, oficialmente República del Paraguay1​ (en guaraní: Tetã Paraguái), es un país situado en la zona central de América del Sur. Su territorio se divide políticamente en un distrito capital y 17 departamentos, que a su vez se subdividen en 259 municipios.`,
+            "406.752 km²",
+        ],
+        population: `Paraguay, con una población de 7.053.000 personas, se encuentra en la posición 105 de la tabla de población, compuesta por 196 países y mantiene una muy baja densidad de población, 17 habitantes por Km2.`,
+        cities: [
+            {
+                name: "San Lorenzo",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Luque",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Ciudad del Este",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Asunción",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: " Guaranies (PYG)",
+        language: "Español",
+        demonym: "Paraguayo (a)",
+        tourism: [
+            {
+                name: "Túnel de Arboles.",
+                description:
+                    "Es el sitio obligado para detenerse y admirar este trabajo que conjuga la naturaleza con la mano del hombre.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/tunel--arbol.png",
+            },
+            {
+                name: "Salto Cristal.",
+                description:
+                    "Cascadas recónditas en plena selva, a las que solo se puede acceder por escabrosos caminos.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/salto cristal.png",
+            },
+            {
+                name: "Las cavernas de Vallemi.",
+                description:
+                    "La localidad de Vallemí en el Dpto. de Concepción, con sus mágicas cavernas, se erige como un destino obligado para los amantes de la naturaleza y la aventura.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/cavernas--vallemi.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/Paraguay.png",
+            "./data/images/countrys/Paraguay--bandera.png",
+            "./data/images/countrys/Paraguay--escudo.png",
+        ],
+    },
+    {
+        name: "Uruguay",
+        code: "uy",
+        surface: [
+            `Uruguay, oficialmente República Oriental del Uruguay, es un país de América del Sur, situado en la parte oriental del Cono Sur.`,
+            "176.215 km²",
+        ],
+        population: `Uruguay, con una población de 3.449.299 personas, se encuentra en la posición 135 de la tabla de población, compuesta por 196 países y presenta una moderada densidad de población, 20 habitantes por Km2.`,
+        cities: [
+            {
+                name: "Rivera",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Salto",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Ciudad de la Costa",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Montevideo",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: " Pesos uruguayos (UYU)",
+        language: "Español",
+        demonym: "Uruguayo (a)",
+        tourism: [
+            {
+                name: "Montevideo.",
+                description:
+                    "La capital de Uruguay, es una importante ciudad de la Bahía de Montevideo. Se ubica en torno a la Plaza de la Independencia, donde alguna vez hubo una ciudadela española.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/montevideo.png",
+            },
+            {
+                name: "Colonia Sacramento.",
+                description:
+                    "Es conocida por su Barrio Histórico con calles de adoquines rodeadas de edificios que datan de la época en que era un asentamiento portugués..",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/sacramento.png",
+            },
+            {
+                name: "Punta del Este.",
+                description:
+                    'balneario que se encuentra en una angosta península del sudeste de Uruguay. La popular playa Brava es conocida por su fuerte oleaje y por "La mano", una escultura gigante de 5 dedos.',
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/punta--este.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/Uruguay.png",
+            "./data/images/countrys/Uruguay--bandera.png",
+            "./data/images/countrys/Uruguay--escudo.png",
+        ],
+    },
+    {
+        name: "Guatemala",
+        code: "ni",
+        surface: [
+            `Nicaragua, oficialmente República de Nicaragua, es un país soberano ubicado en el istmo centroamericano, la capital y ciudad política más poblada es Managua.`,
+            "130.373 km²",
+        ],
+        population: `Nicaragua, con una población de 6.465.513 personas, se encuentra en la posición 111 de la tabla de población, compuesta por 196 países y presenta una moderada densidad de población, 50 habitantes por Km2.`,
+        cities: [
+            {
+                name: "León",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Masaya",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Chinandega",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Managua",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: "Córdobas (NIO)",
+        language: "Español",
+        demonym: "Nicaragüense",
+        tourism: [
+            {
+                name: "Granada.",
+                description:
+                    "Ciudad de Nicaragua en la costa del lago Nicaragua, Alberga varios sitios coloniales españoles icónicos y sobrevivió a varias invasiones piratas.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/granada.png",
+            },
+            {
+                name: "Catedral de León.",
+                description:
+                    "Es una catedral de construcción barroca colonial ubicada en la ciudad de León, Departamento de León, Nicaragua.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/catedral--leon.png",
+            },
+            {
+                name: "Playa Marsella.",
+                description:
+                    '',
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/playa--marsella.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/Nicaragua.png",
+            "./data/images/countrys/Nicaragua--bandera.png",
+            "./data/images/countrys/Nicaragua--escudo.png",
+        ],
+    },
+    {
+        name: "Ecuador",
+        code: "ec",
+        surface: [
+            `Ecuador, oficialmente la República del Ecuador, es un país soberano ubicado en la región noroccidental de América del Sur, compuesto por veinticuatro provincias.`,
+            "283.560 km²",
+        ],
+        population: `Ecuador, con una población de 17.023.000 personas, se encuentra en la posición 68 de la tabla de población, compuesta por 196 países y presenta una moderada densidad de población, 66 habitantes por Km2.`,
+        cities: [
+            {
+                name: "Guayaquil",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Cuenca",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Santo Domingo",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Quito",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: "Dólares (DOL)",
+        language: "Español",
+        demonym: "Ecuatoriano (a)",
+        tourism: [
+            {
+                name: "Centro histórico de Quito.",
+                description:
+                    "Es considerado el conjunto histórico mejor conservado​ y uno de los más importantes de Hispanoamérica. Tiene alrededor de 130 edificaciones monumentales.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/granada.png",
+            },
+            {
+                name: "Pueblo de Montañita.",
+                description:
+                    "Montañita es una aldea de la península de Santa Elena en Ecuador, conocida por sus playas con fuertes rompientes del oleaje y su ambiente bohemio.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/montañita.png",
+            },
+            {
+                name: "Centro histórico de Cuenca.",
+                description:
+                    'El Centro Histórico de Santa Ana de los Ríos de Cuenca,​ es un lugar turístico de la ciudad de Cuenca, declarado Patrimonio de la Humanidad por la UNESCO desde 1999.​',
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/centro--cuenca.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/Ecuador.png",
+            "./data/images/countrys/Ecuador--bandera.png",
+            "./data/images/countrys/Ecuador--escudo.png",
+        ],
+    },
+    {
+        name: "Guatemala",
+        code: "gt",
+        surface: [
+            `Guatemala oficialmente República de Guatemala, es un estado soberano situado en América Central en su extremo noroccidental, en los países angloparlantes y otros lo sitúan en América del Norte.`,
+            "108.889 km²",
+        ],
+        population: `Guatemala, con una población de 17.263.000 personas, se encuentra en la posición 67 de la tabla de población, compuesta por 196 países y tiene una densidad de población de 159 habitantes por Km2.`,
+        cities: [
+            {
+                name: "Santa Catarina Pinula",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "San Miguel Petapa",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Mixco",
+                x: 2000,
+                y: 2000,
+            },
+            {
+                name: "Ciudad de Guatemala",
+                x: 2000,
+                y: 2000,
+            },
+        ],
+        money: "Quetzales (GTQ)",
+        language: "Español",
+        demonym: "Gualtemateco (a)",
+        tourism: [
+            {
+                name: "Antigua.",
+                description:
+                    "Antigua es una pequeña ciudad rodeada por volcanes en el sur de Guatemala. Es famosa por sus edificios coloniales españoles.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/antigua.png",
+            },
+            {
+                name: "Mercado de Chichicastenango.",
+                description:
+                    "En Chichicastenango días jueves y domingos se lleva a cabo el día mercado tradicional. Es considerado el más grande de Centroamérica en su género.",
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/mercado.png",
+            },
+            {
+                name: "Tikal.",
+                description:
+                    'Enorme parque nacional en la jungla, con templos mayas y ruinas ceremoniales del año 900 a. C.​',
+                    x: 2000,
+                    y: 2000,
+                img: "./data/images/countrys/tikal.png",
+            },
+        ],
+        images: [
+            "./data/images/countrys/Guatemala.png",
+            "./data/images/countrys/Guatemala--banderas.png",
+            "./data/images/countrys/Guatemala--escudo.png",
         ],
     },
 ];
