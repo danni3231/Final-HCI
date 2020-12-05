@@ -11,10 +11,15 @@
 <body>
   <nav class="nav">
     <img class="clickable" src="./data/images/icons/arrow.png" alt="" />
-    <h2>Nivel3</h2>
+    <h2>Nivel 2</h2>
   </nav>
 
-  <div class="game2">
+  <div class="instrucciones" style="display: flex;">
+    <img src="./data/images/Nivel2--instrucciones.gif" alt="instrucciones del lvl 1">
+    <button class="btn btn--secondary">Empezar</button>
+  </div>
+
+  <div class="game2" style="display: none;">
     <div class="flag">
       <h1 id="countrySelected"></h1>
       <div class="flag__content">
@@ -71,13 +76,17 @@
             
           </div>
         </div>
-  
+        
       </div>
   
 
   </div>
 
-
+  <div class="finalizarNivel">
+    <img class="imgFinal" src="./data/images/nivel2Final.png">
+    <span class="puntajee">0 puntos</span>
+    <button class="btnFinal btn--terciary">Volver al menú principal</button>
+  </div>
 
 
 </body>

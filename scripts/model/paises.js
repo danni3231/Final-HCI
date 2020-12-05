@@ -51,7 +51,7 @@ const Peru = {
 const CostaRica = {
     nombre: 'CostaRica',
     colores: ['darkblue', 'white', 'red', 'white', 'darkblue'],
-    simbolo: '',
+    simbolo: 'simboloCostaRica.png',
     orientacion: 'horizontal',
     bandera: 'CostaRica.png',
     silueta: 'siluetaCostaRica.png',
@@ -60,7 +60,7 @@ const CostaRica = {
 
 const Ecuador = {
     nombre: 'Ecuador',
-    colores: ['yellow', 'blue', 'red'],
+    colores: ['yellow', 'darkblue', 'red'],
     simbolo: 'simboloEcuador.png',
     orientacion: 'horizontal',
     bandera: 'Ecuador.png',

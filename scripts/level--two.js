@@ -91,7 +91,7 @@ var bandera = new Bandera();
 var indexBandera = -1;
 var nivel = indexBandera+1;
 var banderaTrue = undefined;
-var banderas = [Ecuador, Argentina, ElSalvador, Mexico, Guatemala];
+var banderas = [Ecuador, Argentina, ElSalvador, Mexico, Guatemala, Paraguay, Nicaragua, Haiti, CostaRica];
 var banderaSimbolos = [];
 shuffle(banderas);
 
@@ -110,27 +110,22 @@ var generateBandera = () => {
   var indexSimbolo = indexBandera;
   for (let i = 0; i < 3; i++) {
     banderaSimbolos.push(banderas[indexSimbolo]);
-    console.log(banderas[indexSimbolo].simbolo);
     indexSimbolo++;
   }
   
   var extra = 0;
   shuffle(banderaSimbolos);
+  console.log(banderaSimbolos);
   for (let i = 0; i < banderaSimbolos.length; i++) {
     
     var crearSimbolo = document.createElement("img");
     crearSimbolo.classList.add("simboloImage");
     crearSimbolo.id='hola'+extra;
-    crearSimbolo.setAttribute('src', './data/images/level1/simbolosBanderas/'+banderaSimbolos[i].simbolo);
+    crearSimbolo.setAttribute('src', './data/images/countrys/'+banderaSimbolos[i].simbolo);
     crearSimbolo.setAttribute('draggable', 'true');
     crearSimbolo.setAttribute('onDragStart', 'onDragStart(event);');
     document.getElementById('simboloss').appendChild(crearSimbolo);
     extra++;
-    //for (let i = 0; i < bandera.franjasArray.length; i++) {
-    //  var altura = 100/bandera.franjasArray.length;
-    //  bandera.franjasArray[i].html.style.height=altura+'%';
-    //  //console.log('crearSimbolo '+ i +'tiene altura '+altura+'%, lo cual representa '+bandera.franjasArray[i].html.style.height+'px');
-    //}
     
   }
 };
@@ -138,10 +133,8 @@ var generateBandera = () => {
 function onDragStart(event) {
   event.dataTransfer.setData('text/plain', event.target.id);
   const id = event.dataTransfer.getData('text');
-  console.log(id);
   const draggableElement = document.getElementById(id);
   event.currentTarget.style.backgroundColor = window.getComputedStyle(draggableElement, null).getPropertyValue("background-color");
-  console.log(draggableElement);
 }
 
 function onDragOver(event) {
@@ -154,7 +147,7 @@ function onDrop(event) {
   //var color = event.dataTransfer.styles.width;
   //console.log(color);
   const draggableElement = document.getElementById(id);
-  console.log(draggableElement.classList.value);
+
   if (draggableElement.classList.value.includes('draggable')) {
     var color = draggableElement.style.backgroundColor;
   //console.log(color);
@@ -168,13 +161,17 @@ function onDrop(event) {
     var crearSimbolo = document.createElement("img");
     crearSimbolo.classList.add("simboloImage");
     crearSimbolo.id='simboloBanderaImg';
-    crearSimbolo.setAttribute('src', './data/images/level1/simbolosBanderas/'+draggableElement.src.slice(38));
+    crearSimbolo.setAttribute('src', './data/images/countrys/'+draggableElement.src.slice(43));
+    console.log(draggableElement.src.slice(43));
     document.getElementById('canvass').appendChild(crearSimbolo);
   }
   
 }
 
 document.querySelector('.comprobation').addEventListener("click", comprobation);
+
+var aciertoss=0;
+var puntajee = 0;
 
 function comprobation(event) {
   console.log("Entré al evento de comprobación");
@@ -198,17 +195,36 @@ function comprobation(event) {
       }
       if (colorCorrecto) {
         alert('Felicidades');
-        generateBandera();
-        reset();
+        aciertoss++;
+        console.log(aciertoss);
+        if (aciertoss==3) {
+          puntajee+=100;
+          acabarNivel();
+          if (puntajee<0) {
+              puntajee=0;
+          }
+      }
+      reset();
+      generateBandera();
       } else {
+        puntajee-=5;
         alert('No, asi no son los colores');
       }
     } else {
+      puntajee-=5;
       alert('No es la cantidad de franjas correcta');
     }
   } else {
     alert('La orientación no es la correcta');
   }
+}
+
+function acabarNivel(event) {
+  console.log('Final del nivel');
+  document.querySelector(".instrucciones").style.display = "none";
+  document.querySelector(".game2").style.display = "none";
+  document.querySelector(".finalizarNivel").style.display = "flex";
+  document.querySelector(".puntajee").innerText=puntajee+' puntos';
 }
 
 document.querySelector('.aumFranjas').addEventListener("click", moreStripes);
@@ -274,9 +290,17 @@ function transformVertical(event) {
 }
 
 function reset(event) {
-  for (let i = 0; i < bandera.franjasArray.length+1; i++) {
-    lessStripes();
+  transformHorizontal();
+  document.querySelector('#simboloBanderaImg').parentNode.removeChild(document.querySelector('#simboloBanderaImg'));
+  for (let i = 0; i < bandera.franjasArray.length+2; i++) {
+    lessStripes();   
   }
+  for (let i = 0; i < banderaSimbolos.length; i++) {
+    document.querySelector('#hola'+i).parentNode.removeChild(document.querySelector('#hola'+i));
+  }
+    banderaTrue = undefined;
+    banderas = [Ecuador, Argentina, ElSalvador, Mexico, Guatemala];
+    banderaSimbolos = [];
 }
 
 generateBandera();
@@ -284,3 +308,19 @@ generateBandera();
 document.querySelector('nav').querySelector('img').addEventListener('click', function(){
   window.location.href = 'home.html'
 })
+
+//actions
+
+document
+    .querySelector(".instrucciones")
+    .querySelector(".btn")
+    .addEventListener("click", () => {
+        document.querySelector(".instrucciones").style.display = "none";
+        document.querySelector(".game2").style.display = "flex";
+    });
+    document
+    .querySelector(".finalizarNivel")
+    .querySelector(".btnFinal")
+    .addEventListener("click", () => {
+        window.location.href = "home.html";
+    });

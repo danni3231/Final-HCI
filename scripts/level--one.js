@@ -201,6 +201,8 @@ managerDrag.setOnDrog((elementoDrop, elementoDrag) => {
     lvl1comprobation(banderaa, territorio, elemDrop);
 });
 
+var aciertos = 0;
+var puntaje = 0;
 function lvl1comprobation(bandera, territorio, dragElem) {
     if (bandera == territorio) {
         for (let i = 0; i < managerDrag.drops.length; i++) {
@@ -209,11 +211,28 @@ function lvl1comprobation(bandera, territorio, dragElem) {
                     "./data/images/level1/BanderasPaises/" +
                     dragElem.siluetaPintada;
                 managerDrag.drops[i].nextSibling.innerText = dragElem.nombre;
+                aciertos++;
+                console.log(aciertos);
+                if (aciertos==3) {
+                    puntaje+=100;
+                    if (puntaje<0) {
+                        puntaje=0;
+                    }
+                    acabarNivel();
+                }
             }
         }
     } else {
+        puntaje-=20;
         alert("Nonas sigue intentando");
     }
+}
+
+function acabarNivel(event) {
+    document.querySelector(".instrucciones").style.display = "none";
+    document.querySelector(".contentLevel1").style.display = "none";
+    document.querySelector(".finalizarNivel").style.display = "flex";
+    document.querySelector(".puntajee").innerText=puntaje+' puntos';
 }
 
 //actions
@@ -230,4 +249,10 @@ document
     .addEventListener("click", () => {
         document.querySelector(".instrucciones").style.display = "none";
         document.querySelector(".contentLevel1").style.display = "flex";
+    });
+    document
+    .querySelector(".finalizarNivel")
+    .querySelector(".btnFinal")
+    .addEventListener("click", () => {
+        window.location.href = "home.html";
     });
